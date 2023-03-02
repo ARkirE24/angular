@@ -1,0 +1,46 @@
+<!--https://play.tailwindcss.com/swcVWnbUd5?size=434x763&file=css-->
+
+<div class="imagen">
+  <div class="capa-imagen">
+    <div class="calculadora">
+
+      <div class="panel ">
+        <div class="texto-panel">{{texto}}</div>
+      </div>
+
+      <div class="tecla">
+        <div class="fila1">
+          <div class="tecla-blanca" (click)="funcionBorrarTodo()"><div class="color-negro">AC</div></div>
+          <div class="tecla-blanca" (click)="funcionBorrar()"><div class="color-negro">DE</div></div>
+          <div class="tecla-blanca" (click)="funcionTeclaNumero('.')"><div class="color-negro">.</div></div>
+          <div class="tecla-azul" (click)="funcionTeclaNumero(' / ')"><div class="color-blanco">/</div></div>
+        </div>
+        <div class="fila2">
+          <div class="tecla-ploma" (click)="funcionTeclaNumero('7')"><div class="color-blanco">7</div></div>
+          <div class="tecla-ploma" (click)="funcionTeclaNumero('8')"><div class="color-blanco">8</div></div>
+          <div class="tecla-ploma" (click)="funcionTeclaNumero('9')"><div class="color-blanco">9</div></div>
+          <div class="tecla-azul" (click)="funcionTeclaNumero(' * ')"><div class="color-blanco">*</div></div>
+        </div>
+        <div class="fila3">
+          <div class="tecla-ploma" (click)="funcionTeclaNumero('4')"><div class="color-blanco">4</div></div>
+          <div class="tecla-ploma" (click)="funcionTeclaNumero('5')"><div class="color-blanco">5</div></div>
+          <div class="tecla-ploma" (click)="funcionTeclaNumero('6')"><div class="color-blanco">6</div></div>
+          <div class="tecla-azul" (click)="funcionTeclaNumero(' - ')"><div class="color-blanco">-</div></div>
+        </div>
+        <div class="fila4">
+          <div class="tecla-ploma" (click)="funcionTeclaNumero('1')"><div class="color-blanco">1</div></div>
+          <div class="tecla-ploma" (click)="funcionTeclaNumero('2')"><div class="color-blanco">2</div></div>
+          <div class="tecla-ploma" (click)="funcionTeclaNumero('3')"><div class="color-blanco">3</div></div>
+          <div class="tecla-azul" (click)="funcionTeclaNumero(' + ')"><div class="color-blanco">+</div></div>
+        </div>
+        <div class="fila5">
+          <div class="tecla-blanca" (click)="funcionTeclaNumero('00')"><div class="color-negro">00</div></div>
+          <div class="tecla-ploma" (click)="funcionTeclaNumero('0')"><div class="color-blanco">0</div></div>
+          <div class="tecla-azul-grande" (click)="funcionIgual()"><div class="color-blanco">=</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
